@@ -1,30 +1,86 @@
+/* CSS Document */
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
 * {
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height:100%;
 }
 
 body{
 	padding: 0;
 	margin: 0;
 }
+@media screen and (min-width: 800px){ 
+    header {
+        width: 100%;
+        background-color: black;
+        margin: 0;
+        color: white;
+        position: absolute;
+        top: 0;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    .wrapper {
+        padding:0;
+        margin: 10% 25%;    
+        width: auto;
+        height: auto;
+        border: 1px black solid;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
 
-.wrapper {
-	padding:0;
-	margin:0;
-	border: 1% black solid;
-}
+    .placeholder {
 
-.placeholder {
-	
-}
-.login {
-	background-color: grey;
-	width: auto;
-	height: 500px;
-	margin: 25% 25% 25% 25%;
-}
+    }
 
-button {
-	width: 10%;
-	height: 50%;
-	
+    .login {
+        background-color: grey;
+        width: auto;
+        display: block;
+        height: 100%;
+    }
+
+    button {    
+        border: 1px black solid;
+        bottom: 5%;
+        position: absolute;
+        right: 3%;
+        width: 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    input {
+        border: 1px black solid;
+    }
+    
+    footer {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 1px black solid;
+        color: white;
+        background-color: black;
+        bottom: 0;
+        position: absolute;
+    }
+       
+    footer h1 {
+        margin: 0;
 }
